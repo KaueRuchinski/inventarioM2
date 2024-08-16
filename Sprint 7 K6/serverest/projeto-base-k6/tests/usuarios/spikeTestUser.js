@@ -4,7 +4,7 @@ import { SharedArray } from 'k6/data';
 import { htmlReport } from 'https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js';
 import {BaseChecks, BaseRest, ENDPOINTS, testConfig,} from '../../support/base/baseTest.js';
 
-export const options = testConfig.options.smokeThreshold;
+export const options = testConfig.options.spikeThreshold;
 
 const base_uri = testConfig.environment.hml.url;
 const baseRest = new BaseRest(base_uri);
