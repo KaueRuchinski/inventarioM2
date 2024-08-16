@@ -3,7 +3,7 @@ import { htmlReport } from 'https://raw.githubusercontent.com/benc-uk/k6-reporte
 import { BaseChecks, BaseRest, ENDPOINTS, testConfig } from '../../support/base/baseTest.js';
 import { productGenerate, userGenerate } from '../../data/dynamic/dados.js';
 
-export const options = testConfig.options.smokeThreshold;
+export const options = testConfig.options.loadThreshold;
 
 const base_uri = testConfig.environment.hml.url;
 const baseRest = new BaseRest(base_uri);
