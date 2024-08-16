@@ -56,9 +56,12 @@ export const testConfig = {
         },
         loadThreshold:{
             stages: [
-                {duration: '6s', target: 40},
-                {duration: '6s', target: 40},
-                {duration: '3s', target: 0}
+                {duration: '10s', target: 150},
+                {duration: '15s', target: 200},
+                {duration: '10s', target: 300},
+                {duration: '10s', target: 400},
+                {duration: '10s', target: 500},
+                {duration: '15s', target: 0}
               ],
             threshold: {    
                 http_req_duration: ['(95)< 2000'],
